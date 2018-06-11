@@ -1,0 +1,4 @@
+epoll_size 2048
+port 8888
+listen_num 10240
+thread_num 8

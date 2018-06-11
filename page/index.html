@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>信阳师范学院</title>
+    <link rel="stylesheet" href="#">
+    <style>
+
+    .father {
+        width: auto;
+        margin: 0px;
+    }
+
+    .son1 {
+        /*background: #ff1493;*/
+        height: 42px;
+        background: green;
+    }
+
+    .ul_list1 {
+        list-style-type: none;
+    }
+
+    .ul_list2 {
+        list-style-type: none;
+    }
+
+    .ul_list1 li {
+        float: left;
+        margin-right: 20px;
+        margin-top: 10px;
+        color: white;
+    }
+
+    .ul_list2 li {
+        float: right;
+        margin-right: 20px;
+        color: white;
+        margin-top: 10px;
+    }
+
+
+    ul li a {
+        color: white;
+        text-decoration: none;
+        padding-bottom: 10px;
+    }
+
+
+
+    .son2 {
+        /*background: blue;*/
+        width: 100%;
+        position: absolute;
+        top: 58px;
+        background: white;
+        height: 80px;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .son2_img_div {
+        float: left;
+    }
+
+    a img {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .container {
+        width: auto;
+        background: #fff;
+        position: relative;
+        top: 20px;
+        float: right;
+        /*margin: 10px 50px 10px 10px;*/
+    }
+
+    .dropdown {
+        position: relative;
+        float: right;
+    }
+
+    .btn {
+        background: white;
+        width: 110px;
+        height: 30px;
+        color: black;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .btn-content {
+        display: none;
+        background: white;
+        width: 110px;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.6;
+    }
+
+    .btn-content a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        transition: all .2s ease-in-out;
+        margin-top: 10px;
+        color: black;
+    }
+
+    .btn-content a:hover {
+        color: red;
+        text-decoration: underline;
+    }
+
+    .dropdown:hover .btn-content {
+        display: block;
+        background: #fff;
+        opacity: 1;
+    }
+
+    .dropdown:hover .btn {
+        /* 当下拉内容显示后修改下拉按钮的背景颜色 */
+        background: white;
+        color: red;
+        text-decoration: underline;
+    }
+
+    .container:hover .btn-content {
+        display: block;
+    }
+
+    .son3 {
+        position: absolute;
+        top: 137px;
+        /*background: #00bfff;*/
+        height: 400px;
+        width: auto;
+    }
+
+    .son2_son3 {
+        height: 480px;
+    }
+
+    .son4 {
+        width: auto;
+        position: relative;
+        /*background: red;*/
+        height: 314px;
+    }
+
+    .son4_head_left1 {
+        float: left;
+        height: 40px;
+        width: 200px;
+        text-align: right;
+        padding-top: 11px;
+        font-size: 20px;
+        color: green;
+        /*margin-top: 20px;*/
+    }
+
+    .son4_head_left2 {
+        /*background: blue;*/
+        float: left;
+
+        width: 933px;
+        height: 10px;
+        background: lightgray;
+        margin-top: 20px;
+    }
+
+
+    .son4_head_right1 {
+        /*background: yellow;*/
+        float: right;
+
+        height: 40px;
+        width: 200px;
+        padding-top: 13px;
+        font-size: 16px;
+    }
+
+    .son4_head_right1 a {
+        text-decoration: none;
+        color: gray;
+    }
+
+    .son4_content_left1 {
+        /*background: blue;*/
+        float: left;
+        height: 274px;
+        width: 330px;
+        position: relative;
+        right: 140px;
+        /*margin-right: 20px;*/
+    }
+
+    .son4_content_left1 img {
+        width: 330px;
+    }
+
+    .son4_content_left1_bottom {
+        height: 30px;
+        text-align: center;
+        /*background: pink;*/
+        padding-top: 8px;
+        /*剩62px*/
+    }
+
+    .son4_content_left1_bottom a {
+        font-size: 0.8em;
+        text-decoration: none;
+        color: gray;
+    }
+
+    .son4_content_left2 {
+        /*background: pink;*/
+        float: left;
+        height: 274px;
+        width: 400px;
+        position: relative;
+        right: 70px;
+        /*margin-right: 20px;*/
+    }
+
+    .son4_content_left2_son1 {
+        /*background: green;*/
+        height: 137px;
+    }
+
+    .son4_content_left2_son1_right {
+        /*background: pink;*/
+        float: right;
+        height: 102px;
+        width: 258px;
+        padding-top: 5px;
+        /*padding-left: 5px;*/
+    }
+
+    .son4_content_left2_son1_right a {
+        /*font-size: 0.8em;*/
+        text-decoration: none;
+        color: black;
+    }
+
+    .son4_content_left2_son2 {
+        /*background: blue;*/
+        height: 137px;
+    }
+
+
+    .son4_content_right1 {
+        /*background: green;*/
+        height: 274px;
+        width: 400px;
+        float: left;
+        position: relative;
+        top: -13px;
+        right: 30px;
+    }
+
+
+    .son5 {
+        /*background: yellow;*/
+        height: 314px;
+    }
+
+    .son5_head_left1 {
+        float: left;
+        height: 40px;
+        width: 100px;
+        text-align: right;
+        padding-top: 5px;
+        font-size: 20px;
+        color: green;
+        /*margin-top: 20px;*/
+    }
+
+    .son5_head_left2 {
+        /*background: blue;*/
+        float: left;
+
+        width: 227px;
+        height: 10px;
+        background: lightgray;
+        margin-top: 15px;
+    }
+
+
+    .son5_head_right1 {
+        /*background: yellow;*/
+        float: right;
+
+        height: 40px;
+        width: 50px;
+        padding-top: 8px;
+        font-size: 16px;
+    }
+
+    .son5_content_left1 {
+        /*background: blue;*/
+        float: left;
+        height: 314px;
+        width: 400px;
+        position: relative;
+        left: 25px;
+        top: -12px;
+    }
+    .son5_content_left1 div p a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .son5_content_left2 {
+        /*background: red;*/
+        float: left;
+        height: 314px;
+        width: 400px;
+        position: relative;
+        left: 210px;
+        position: relative;
+        left: 60px;
+        top: -12px;
+    }
+     .son5_content_left2 div p a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .son5_content_right1 {
+        /*background: green;*/
+        height: 314px;
+        width: 400px;
+        float: right;
+        position: relative;
+        right: 40px;
+        position: relative;
+        top: -12px;
+        left: -33px;
+    }
+     .son5_content_right1 div p a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .son6 {
+        /*background: pink;*/
+        height: 270px;
+    }
+
+
+    .son6_head_left1 {
+        /*background: yellow;*/
+        float: left;
+        height: 30px;
+        width: 200px;
+        text-align: right;
+        /*padding-top: 8px;*/
+        font-size: 20px;
+        color: green;
+        /*margin-top: 20px;*/
+    }
+
+    .son6_head_left2 {
+        /*background: blue;*/
+        float: left;
+
+        width: 933px;
+        height: 10px;
+        background: lightgray;
+        margin-top: 12px;
+    }
+
+
+    .son6_head_right1 {
+        /*background: yellow;*/
+        float: right;
+
+        height: 40px;
+        width: 200px;
+
+        font-size: 16px;
+    }
+
+    .son6_content_top {
+        width: auto;
+        height: 115px;
+        /*background: blue;*/
+    }
+
+    .son6_content_top ul li {
+        display: inline-block;
+        height: 82px;
+        width: 110px;
+        background: lightgray;
+        /*margin-top: 20px;*/
+        margin-right: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        text-align: center;
+        list-style-type: none;
+    }
+
+    .son6_content_top ul li a {
+
+        text-decoration: none;
+    }
+       .son6_content_bottom {
+        width: auto;
+        height: 115px;
+        /*background: red;*/
+    }
+
+    .son6_content_bottom ul li {
+        display: inline-block;
+        height: 82px;
+        width: 110px;
+        background: lightgray;
+        /*margin-top: 20px;*/
+        margin-right: 20px;
+        border-radius: 10px;
+     
+        text-align: center;
+        list-style-type: none;
+    }
+
+    .son6_content_bottom ul li a {
+
+        text-decoration: none;
+    }
+
+
+    .son7 {
+        width: auto;
+        background: lightgray;
+        height: 150px;
+    }
+
+    .son8 {
+        width: auto;
+        height: 43px;
+        background: gray;
+        text-align: center;
+        color: white;
+        padding-top: 20px;
+    }
+
+    .son8 a {
+        text-decoration: none;
+        color: white;
+        margin-right: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son1">
+            <ul class="ul_list1">
+                <li>个性化访问:</li>
+                <li><a href="#">教职工</a></li>
+                <li><a href="#">在校生</a></li>
+                <li><a href="#">访客及考生</a></li>
+                <li><a href="#">校友</a></li>
+            </ul>
+            <ul class="ul_list2">
+                <li><a href="#">RSS</a></li>
+                <li><a href="#">校历</a></li>
+                <li><a href="#">旧版数据</a></li>
+                <li><a href="#">English</a></li>
+            </ul>
+        </div>
+        <div class="son2_son3">
+            <div class="son2">
+                <div class="son2_img_div">
+                    <a href="#"><img src="images/logo.jpg" alt="logo" width="220px" height="60px"></a>
+                </div>
+                <div class="container">
+                    <div class="dropdown">
+                        <div class="btn">学校概况</div>
+                        <div class="btn-content">
+                            <a href="#">学校简介</a>
+                            <a href="#">大学章程</a>
+                            <a href="#">文化标识</a>
+                            <a href="#">现任领导</a>
+                            <a href="#">机构设置</a>
+                            <a href="#">菁菁校园</a>
+                            <a href="#">航拍师院</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="btn">教育科学</div>
+                        <div class="btn-content">
+                            <a href="#">本科生教育</a>
+                            <a href="#">研究生教育</a>
+                            <a href="#">继续教育</a>
+                            <a href="#">网络教学平台</a>
+                            <a href="#">教学发展中心</a>
+                            <a href="#">教学评估中心</a>
+                            <a href="#">公共艺术中心</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="btn">科学研究</div>
+                        <div class="btn-content">
+                            <a href="#">科技管理</a>
+                            <a href="#">社科管理</a>
+                            <a href="#">学科建设</a>
+                            <a href="#">学风建设</a>
+                            <a href="#">科研机构</a>
+                            <a href="#">学报</a>
+                            <a href="#">工程中心</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="btn">人才招聘</div>
+                        <div class="btn-content">
+                            <a href="#">学校简介</a>
+                            <a href="#">大学章程</a>
+                            <a href="#">文化标识</a>
+                            <a href="#">现任领导</a>
+                            <a href="#">机构设置</a>
+                            <a href="#">菁菁校园</a>
+                            <a href="#">航拍师院</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="btn">招生就业</div>
+                        <div class="btn-content">
+                            <a href="#">学校简介</a>
+                            <a href="#">大学章程</a>
+                            <a href="#">文化标识</a>
+                            <a href="#">现任领导</a>
+                            <a href="#">机构设置</a>
+                            <a href="#">菁菁校园</a>
+                            <a href="#">航拍师院</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="btn">图书文献</div>
+                        <div class="btn-content">
+                            <a href="#">学校简介</a>
+                            <a href="#">大学章程</a>
+                            <a href="#">文化标识</a>
+                            <a href="#">现任领导</a>
+                            <a href="#">机构设置</a>
+                            <a href="#">菁菁校园</a>
+                            <a href="#">航拍师院</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="btn">合作交流</div>
+                        <div class="btn-content">
+                            <a href="#">学校简介</a>
+                            <a href="#">大学章程</a>
+                            <a href="#">文化标识</a>
+                            <a href="#">现任领导</a>
+                            <a href="#">机构设置</a>
+                            <a href="#">菁菁校园</a>
+                            <a href="#">航拍师院</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="btn">公共服务</div>
+                        <div class="btn-content">
+                            <a href="#">学校简介</a>
+                            <a href="#">大学章程</a>
+                            <a href="#">文化标识</a>
+                            <a href="#">现任领导</a>
+                            <a href="#">机构设置</a>
+                            <a href="#">菁菁校园</a>
+                            <a href="#">航拍师院</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="son3">
+                <marquee behavior="scroll" direction="right" scrollamount="20">
+                    <img src="images/01.jpg" alt="01">
+                    <img src="images/02.jpg" alt="02">
+                    <img src="images/03.jpg" alt="03">
+                    <img src="images/04.jpg" alt="04">
+                    <img src="images/05.jpg" alt="05">
+                    <img src="images/06.jpg" alt="06">
+                </marquee>
+            </div>
+        </div>
+        <div class="son4">
+            <div style="height:40px;">
+                <div class="son4_head_left1">师院要闻&nbsp;&nbsp;</div>
+                <div class="son4_head_left2"></div>
+                <div class="son4_head_right1"><a href="#">&nbsp;&nbsp;访问新闻网</a></div>
+            </div>
+            <div style="height: 274px;">
+                <div class="son4_content_left1">
+                    <img src="images/yaowen01.jpg" alt="01">
+                    <div class="son4_content_left1_bottom"><a href="#">中国共产党信阳师范学院第四次代表大会隆重开幕</a></div>
+                    <hr>
+                </div>
+                <div class="son4_content_left2">
+                    <div class="son4_content_left2_son1">
+                        <img src="images/yaowen04.jpg" alt="04">
+                        <div class="son4_content_left2_son1_right"><a href="#">学校召开2018年度基层党建工作推进会</a>
+                            <p style="font-size: 0.8em;color:gray;">余作斌以“学习贯彻党的十九大精神和学校第四次党代会精神，坚定以习近平...“</p>
+                        </div>
+                        <br>
+                        <hr>
+                    </div>
+                    <div class="son4_content_left2_son2">
+                        <img src="images/yaowen05.jpg" alt="05">
+                        <div class="son4_content_left2_son1_right"><a href="#">社会工作专业”党员博士团“走进万营村</a>
+                            <p style="font-size: 0.8em;color:gray;">5月18日，我校中国农村社会工作研究中心”党员博士服务团“走进潢川...</p>
+                        </div>
+                        <br>
+                        <hr>
+                    </div>
+                </div>
+                <div class="son4_content_right1">
+                    <div class="son4_content_left2_son1">
+                        <img src="images/yaowen02.jpg" alt="02">
+                        <div class="son4_content_left2_son1_right"><a href="#">我校召开高等教育质量检测国家数据平台2018年数据填报工作会</a>
+                            <p style="font-size: 0.8em;color:gray;">5月24日，学校在第七会议室召开高等教育质量检测国家数据平台2018年数...</p>
+                        </div>
+                        <br>
+                        <hr>
+                    </div>
+                    <div class="son4_content_left2_son2">
+                        <img src="images/yaowen03.jpg" alt="02">
+                        <div class="son4_content_left2_son1_right"><a href="#">“习近平新时代统一战线思想”学术研讨会在我校召开</a>
+                            <p style="font-size: 0.8em;color:gray;">5月19日，由信阳师范学院马克思主义学院和当代马克思主义研究所共同承...“</p>
+                        </div>
+                        <br>
+                        <hr>
+                    </div>
+                </div>
+                <div class="cl"></div>
+            </div>
+        </div>
+        <div class="son5">
+            <div class="son5_content_left1">
+                <div style="height:30px;">
+                    <div class="son5_head_left1">综合新闻&nbsp;&nbsp;</div>
+                    <div class="son5_head_left2"></div>
+                    <div class="son5_head_right1"><a href="#">&nbsp;更多</a></div>
+                </div>
+                <div>
+                    <p><a href="#">宋争辉：深刻领会习近平新时代 中国特色社会</a></p>
+                    <p><a href="#">【视频】师院最后的夏天</a></p>
+                    <p><a href="#">背景外国语大学闫国华副校长来我校考察交流</a></p>
+                    <p><a href="#">我校举办第二期纪检监督干部培训班</a></p>
+                    <p><a href="#">学子在“第二届全国高等院校投资理财规划大赛”</a></p>
+                    <p><a href="#">我校2018教职工篮球赛闭幕</a></p>
+                    <p><a href="#">数学硕士学位授权一级学科同行专家评估会议</a></p>
+                </div>
+            </div>
+            <div class="son5_content_left2">
+                <div style="height:30px;">
+                    <div class="son5_head_left1">学术动态&nbsp;&nbsp;</div>
+                    <div class="son5_head_left2"></div>
+                    <div class="son5_head_right1"><a href="#">&nbsp;更多</a></div>
+                </div>
+                <div>
+                    <p><a href="#">宋争辉：深刻领会习近平新时代 中国特色社会</a></p>
+                    <p><a href="#">【视频】师院最后的夏天</a></p>
+                    <p><a href="#">背景外国语大学闫国华副校长来我校考察交流</a></p>
+                    <p><a href="#">我校举办第二期纪检监督干部培训班</a></p>
+                    <p><a href="#">学子在“第二届全国高等院校投资理财规划大赛”</a></p>
+                    <p><a href="#">我校2018教职工篮球赛闭幕</a></p>
+                    <p><a href="#">数学硕士学位授权一级学科同行专家评估会议</a></p>
+                </div>
+            </div>
+            <div class="son5_content_right1">
+                <div style="height:30px;">
+                    <div class="son5_head_left1">通知公告&nbsp;&nbsp;</div>
+                    <div class="son5_head_left2"></div>
+                    <div class="son5_head_right1"><a href="#">&nbsp;更多</a></div>
+                </div>
+                <div>
+                    <p><a href="#">宋争辉：深刻领会习近平新时代 中国特色社会</a></p>
+                    <p><a href="#">【视频】师院最后的夏天</a></p>
+                    <p><a href="#">背景外国语大学闫国华副校长来我校考察交流</a></p>
+                    <p><a href="#">我校举办第二期纪检监督干部培训班</a></p>
+                    <p><a href="#">学子在“第二届全国高等院校投资理财规划大赛”</a></p>
+                    <p><a href="#">我校2018教职工篮球赛闭幕</a></p>
+                    <p><a href="#">数学硕士学位授权一级学科同行专家评估会议</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="son6">
+            <div style="height:30px;">
+                <div class="son6_head_left1">校园直通车&nbsp;&nbsp;</div>
+                <div class="son6_head_left2"></div>
+                <div class="son6_head_right1"><a href="#">&nbsp;&nbsp;更多</a></div>
+            </div>
+            <div class="son6_content_top">
+                <ul>
+                    <li><a href="#">一站式导航</a></li>
+                    <li><a href="#">统一信息门户</a></li>
+                    <li> <a href="#">协同办公系统</a></li>
+                    <li><a href="#">可视化校园</a></li>
+                    <li><a href="#">邮件系统</a></li>
+                    <li><a href="#">教务管理系统</a></li>
+                    <li><a href="#">网上财务平台</a></li>
+                    <li><a href="#">校园卡服务</a></li>
+                </ul>
+            </div>
+            <div class="son6_content_bottom">
+                <ul>
+                    <li><a href="#">一站式导航</a></li>
+                    <li><a href="#">统一信息门户</a></li>
+                    <li> <a href="#">协同办公系统</a></li>
+                    <li><a href="#">可视化校园</a></li>
+                    <li><a href="#">邮件系统</a></li>
+                    <li><a href="#">教务管理系统</a></li>
+                    <li><a href="#">网上财务平台</a></li>
+                    <li><a href="#">校园卡服务</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="son7"></div>
+        <div class="son8">
+            <a href="#">12332123</a>
+            <a href="#">5663325</a>
+        </div>
+    </div>
+</body>
+
+</html>
